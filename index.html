@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestBurger</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="burger-ico.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<!--HEADER -->
+
+<header class="header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#home" class="nav-logo">BESTBURGER</a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list"> 
+                <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="#menu-burger" class="nav-link">Menú</a></li>
+                <li class="nav-item"><a href="#promos" class="nav-link">Promos</a></li>
+                <li class="nav-item"><a href="#pediya-sec" class="nav-link">Pedí ya</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <i class='bx bx-restaurant nav-cart' id="fork"></i>
+            <i class='bx bx-menu-alt-right nav-menu-hamb' id="nav-menu-hamb"></i>
+        </div>
+    </nav>
+</header>
+
+<main class="l-main">
+    <section class="home" id="home"> <!-- acá vendría el título y la imagen principal-->
+        <div class="home-container bd-grid">
+            <div class="home-cosas">
+                <h1 class="home-title">DEJATE <BR> TENTAR</span></h1>
+                <p class="home-description">Trabajamos con las mejores materias primas del mercado. Innovamos 24/7 en el ámbito gastronómico y te ofrecemos un servicio inigualable por un precio único y accesible.</p>
+                <a href ="#pediya" class="button" id="button-home"> Pedí la tuya</a>
+            </div>
+
+        <img src="burger-png.png" alt="imagen-hamburguesa" class="home-img">
+        </div>
+    </section>
+
+    <section class="menu-burg" id="menu-burger"> <!-- acá irían muchos cuadraditos con otras hamburguesas hechos en Canva-->
+        <div class="menu-container bd-grid">
+            <div class="menu-box" id="menu-box-cero"> 
+                <img src="burger-png.png" alt="burger1" class="menu-img">
+                <div class="menu-cosas">
+                    <h2 class="menu-title"> <span class="menu-subtitle">Veggie</span><br>Lentejas y quinoa</h2>
+                    <a href="#" class="menu-view">Información nutricional</a>
+                </div>
+            </div>
+
+            <div class="menu-box" id="menu-box-uno"> 
+                <div class="menu-cosas">
+                    <h2 class="menu-title"> <span class="menu-subtitle">100% carne vacuna</span><br>Triple bacon</h2>
+                    <a href="#" class="menu-view">Información nutricional</a>
+                </div>
+                <img src="burger-png.png" alt="burger2" class="menu-img">
+            </div>
+
+            <div class="menu-box" id="menu-box-dos"> 
+                <img src="burger-png.png"  class="menu-img">
+                <div class="menu-cosas">
+                    <h2 class="menu-title"> <span class="menu-subtitle">Pollo crispy</span><br>Tradicional clásica</h2>
+                    <a href="#" class="menu-view">Información nutricional</a>
+                </div>
+            </div>
+
+            <div class="menu-box" id="menu-box-tres"> 
+                <div class="menu-cosas">
+                    <h2 class="menu-title"> <span class="menu-subtitle">Vegan</span><br>Seitán doble</h2>
+                    <a href="#" class="menu-view">Información nutricional</a>
+                </div>
+                <img src="burger-png.png" alt="gaseosa1" class="menu-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="promos" id="promos">
+        <h2 class="promos-title">PROMOCIONES</h2>
+        <p class="promos-all">Mirá todo lo que tenemos para vos</p>
+        
+        <div class="promos-container bd-grid">
+            <div class="promos-producto">
+                <div class="promos-box" id="burgerjunior">
+                    <div class="promos-new" id="dosporuno">2x1</div>
+                    <img src="burger-png.png" alt="promo 2x1" class="promos-img">
+                </div>
+
+                <div class="promos-cosas">
+                    <h3 class="promos-nombre">Burger Junior</h3>
+                    <span class="promos-precio" id="precio-burgerjr">$350</span>
+                </div>
+
+                <div class="promos-box" id="papasalioli">
+                    <div class="promos-new" id="cuarentaoff">40% off</div>
+                    <img src="papas-alioli-img.png" alt="promo 40%" id="papasalioli-img" class="promos-img">
+                </div>
+
+                <div class="promos-cosas">
+                    <h3 class="promos-nombre">Papas Alioli</h3>
+                    <span class="promos-precio" id="precio-papas">$180</span>
+                </div>
+
+                <div class="promos-box" id="birraipa">
+                    <div class="promos-new" id="veinticincooff">25% off</div>
+                    <img src="birraipa.png" alt="promo 25%" id="birraipa-img" class="promos-img">
+                </div>
+
+                <div class="promos-cosas">
+                    <h3 class="promos-nombre">Birra IPA "Berlín"</h3>
+                    <span class="promos-precio" id="precio-ipa">$220</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pediya-section" id="pediya-sec">
+        <div class="pediya-bg">
+            <div class="pediya-cosas">
+                <h2 class="pediya-title">¿Te tentaste?</h2>
+                <p class="pediya-description"></p>
+                <div class="pediya-form">
+                    <form class="form">
+                        <label for="fname">Usuario:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Contraseña:</label><br>
+                        <input type="password" id="lname" name="lname">
+                        <br><br>
+                        <input type="submit" class="button but-pediya" value="Ingresá y pedí">
+                      </form>
+                </div>
+                <a href="x" class="link" id="pediya-link1">¿Olvidaste tu usuario? |</a>
+                <a href="x" class="link" id="pediya-link2">| Registrate en 2 pasos</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box footer-grid">
+                <h3 class="footer-title">SEGUINOS</h3>
+                <ul>
+                    <li><a href="x" class="footer-social"><i class='bx bxl-facebook-square'></i> Facebook</a></li>
+                    <li><a href="x" class="footer-social"><i class='bx bxl-instagram-alt'></i> Instagram</a></li>
+                    <li><a href="x" class="footer-social"><i class='bx bxl-whatsapp'></i> WhatsApp</a></li>
+                    <li><a href="x" class="footer-social"><i class='bx bxl-twitter'></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-copy">&#169 2021 - Mar del Plata - Copyright </p>
+    </footer>
+</main>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- TODO:
+
+//Corregir desktop
+
+//Meterle algún efecto más
+
+//Mejorar la de las papas
+//Subirlo a vercel y que no crashee 
+
+-->
